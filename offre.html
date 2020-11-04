@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>ProxiFood</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<ul class="nav navbar-nav pull-right">
+				<li class="active"><a href="#">Accueil</a></li>
+				<li><a href="offre.html">Offres</a></li>
+				<li><a href="demande.html">Demandes</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a class="btn" href="signin.html">Inscription</a></li>
+			</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+		
+		<ol class="breadcrumb">
+			<li><a href="index.html">Accueil</a></li>
+			<li class="active">Offre</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<div class="container">
+				<div class="row">
+				  <!-- BEGIN SEARCH RESULT -->
+				  <div class="col-md-12">
+					<div class="grid search">
+					  <div class="grid-body">
+						<div class="row">
+						  <!-- BEGIN FILTERS -->
+						  <div class="col-md-3">
+							<h2 class="grid-title"><i class="fa fa-filter"></i> Filters</h2>
+							<hr>
+							
+							<!-- BEGIN FILTER BY CATEGORY -->
+							<h4>By category:</h4>
+							<div class="checkbox">
+							  <label><input type="checkbox" class="icheck"> Application</label>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" class="icheck"> Design</label>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" class="icheck"> Desktop</label>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" class="icheck"> Management</label>
+							</div>
+							<div class="checkbox">
+							  <label><input type="checkbox" class="icheck"> Mobile</label>
+							</div>
+							<!-- END FILTER BY CATEGORY -->
+							
+							<div class="padding"></div>
+							
+							<!-- BEGIN FILTER BY DATE -->
+							<h4>By date:</h4>
+							From
+							<div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1">
+							  <input type="text" class="form-control">
+							  <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+							</div>
+							<input type="hidden" id="dtp_input1" value="">
+							
+							To
+							<div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+							  <input type="text" class="form-control">
+							  <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span>
+							</div>
+							<input type="hidden" id="dtp_input2" value="">
+							<!-- END FILTER BY DATE -->
+							
+							<div class="padding"></div>
+							
+							<!-- BEGIN FILTER BY PRICE -->
+							<h4>By price:</h4>
+							Between <div id="price1">$300</div> to <div id="price2">$800</div>
+							<div class="slider-primary">
+							  <div class="slider slider-horizontal" style="width: 152px;"><div class="slider-track"><div class="slider-selection" style="left: 30%; width: 50%;"></div><div class="slider-handle round" style="left: 30%;"></div><div class="slider-handle round" style="left: 80%;"></div></div><div class="tooltip top hide" style="top: -30px; left: 50.1px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">300 : 800</div></div><input type="text" class="slider" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="1" data-slider-value="[300,800]" data-slider-tooltip="hide"></div>
+							</div>
+							<!-- END FILTER BY PRICE -->
+						  </div>
+						  <!-- END FILTERS -->
+						  <!-- BEGIN RESULT -->
+						  <div class="col-md-9">
+							<h2><i class="fa fa-file-o"></i> Offres</h2>
+							<hr>
+							<!-- BEGIN SEARCH INPUT -->
+							<div class="input-group">
+							  <input type="text" class="form-control" value="web development">
+							  <span class="input-group-btn">
+								<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+							  </span>
+							</div>
+							<!-- END SEARCH INPUT -->
+							<p>Showing all results matching "web development"</p>
+							
+							<div class="padding"></div>
+							
+							<div class="row">
+							  <!-- BEGIN ORDER RESULT -->
+							  <div class="col-sm-6">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									Order by <span class="caret"></span>
+								  </button>
+								  <ul class="dropdown-menu" role="menu">
+									<li><a href="#">Name</a></li>
+									<li><a href="#">Date</a></li>
+									<li><a href="#">View</a></li>
+									<li><a href="#">Rating</a></li>
+								  </ul>
+								</div>
+							  </div>
+							  <!-- END ORDER RESULT -->
+							  
+							  <div class="col-md-6 text-right">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-default active"><i class="fa fa-list"></i></button>
+								  <button type="button" class="btn btn-default"><i class="fa fa-th"></i></button>
+								</div>
+							  </div>
+							</div>
+							
+							<!-- BEGIN TABLE RESULT -->
+							<div class="table-responsive">
+							  <table class="table table-hover">
+								<tbody><tr>
+								  <td class="number text-center">1</td>
+								  <td class="image"><img src="https://via.placeholder.com/400x300/FF8C00" alt=""></td>
+								  <td class="product"><strong>Product 1</strong><br>This is the product description.</td>
+								  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+								  <td class="price text-right">$350</td>
+								</tr>
+								<tr>
+								  <td class="number text-center">2</td>
+								  <td class="image"><img src="https://via.placeholder.com/400x300/5F9EA0" alt=""></td>
+								  <td class="product"><strong>Product 2</strong><br>This is the product description.</td>
+								  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
+								  <td class="price text-right">$1,050</td>
+								</tr>
+							  </tbody></table>
+							</div>
+							<!-- END TABLE RESULT -->
+							
+							<!-- BEGIN PAGINATION -->
+							<ul class="pagination">
+							  <li class="disabled"><a href="#">«</a></li>
+							  <li class="active"><a href="#">1</a></li>
+							  <li><a href="#">2</a></li>
+							  <li><a href="#">3</a></li>
+							  <li><a href="#">4</a></li>
+							  <li><a href="#">5</a></li>
+							  <li><a href="#">»</a></li>
+							</ul>
+							<!-- END PAGINATION -->
+						  </div>
+						  <!-- END RESULT -->
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- END SEARCH RESULT -->
+				</div>
+				</div>
+			<!-- /Article -->
+		</div>
+	</div>	<!-- /container -->
+	
+
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>+234 23 9873237<br>
+								<a href="mailto:#">some.email@somewhere.com</a><br>
+								<br>
+								234 Hidden Pond Road, Ashland City, TN 37015
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Text widget</h3>
+						<div class="widget-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Accueil</a> | 
+								<a href="about.html">About</a> |
+								<a href="demande.html">Sidebar</a> |
+								<a href="contact.html">Contact</a> |
+								<b><a href="signup.html">Sign up</a></b>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
+		
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
+</html>
